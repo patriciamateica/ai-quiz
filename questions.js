@@ -1323,6 +1323,546 @@ const questions = [
     ],
     "correct": "c"
   },
+  {
+    "question": "In the expression y = Wx + b, which interpretations are correct?",
+    "answers": [
+      "The expression cannot appear in neural network layers.",
+      "W may represent a matrix of weights.",
+      "b may represent a bias vector.",
+      "x may represent an input vector."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about VAEs are correct?",
+    "answers": [
+      "A VAE is a probabilistic autoencoder.",
+      "The reparameterization trick can be written as z = μ + σ ⊙ ϵ, ϵ ∼ N(0, I).",
+      "VAEs support smooth latent spaces and generative sampling.",
+      "The encoder often outputs Gaussian parameters μ and σ."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Given x = torch.randn(4, 6, 10) and torch.nn.RNN(input_size=10, hidden_size=8, num_layers=1, batch_first=True), which statements are correct?",
+    "answers": [
+      "The sequence length is 6.",
+      "The final hidden state shape is (1, 4, 8).",
+      "The input has batch size 4.",
+      "The output shape is (4, 6, 8)."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which scikit-learn tools are used for scaling features to a range or to maximum absolute size?",
+    "answers": [
+      "OrdinalEncoder",
+      "LinearRegression",
+      "MinMaxScaler",
+      "MaxAbsScaler"
+    ],
+    "correct": "cd"
+  },
+  {
+    "question": "Which statements about data flow in feedforward networks are correct?",
+    "answers": [
+      "There are no connections between nodes in the same layer.",
+      "Each node can be connected with every node in the next layer.",
+      "The data flow goes in one direction.",
+      "The output layer sends information back to the input layer during prediction."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about fitness sharing for population dispersion in a GA are correct?",
+    "answers": [
+      "It uses a sharing function based on distance.",
+      "It is sensitive to the sharing radius σ_share.",
+      "It is sensitive to the distance metric.",
+      "It reduces the reward of individuals in crowded areas."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about softmax are correct?",
+    "answers": [
+      "It is suitable for multiclass classification.",
+      "It can output probabilities of classes such as A, B, and C.",
+      "It is the same as MAE loss.",
+      "It converts class scores into probabilities."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Why does a baseline linear model underfit a nonlinear dataset?",
+    "answers": [
+      "Due to the nonlinear structure of data.",
+      "The linear model can capture this particular data.",
+      "The data are impossible for any neural network to learn.",
+      "A purely linear model can only split the space with straight lines."
+    ],
+    "correct": "ad"
+  },
+  {
+    "question": "Which statements correctly compare classical AI and modern AI?",
+    "answers": [
+      "Modern AI often depends on optimization and data availability.",
+      "Classical AI is typically based only on large-scale datasets.",
+      "Modern AI often represents knowledge implicitly through parameters.",
+      "Classical AI usually represents knowledge explicitly."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which problem properties are listed as suitable for ANNs?",
+    "answers": [
+      "The objective function can be discrete or continuous.",
+      "Problem data can be represented by pairs of attribute and value.",
+      "The objective function can be single- or multi-criteria.",
+      "Training data must always be perfectly noise-free."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about information gain are correct?",
+    "answers": [
+      "Information gain is always computed without using class proportions.",
+      "Information gain measures how eliminating or splitting by attribute a reduces dataset entropy.",
+      "Gain(S, a) = E(S) - ∑(|Sv|/|S|) * E(Sv).",
+      "One of the terms from the gain formula is the expected information after splitting by the attribute."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which elements are part of evolutionary algorithms?",
+    "answers": [
+      "Genetic operators",
+      "Fitness function",
+      "Chromosome representation",
+      "Population model"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Consider a dataset with perfectly balanced binary classes before splitting. Which statements about Information Gain are correct?",
+    "answers": [
+      "Information Gain = 0 if the split subsets remain perfectly balanced.",
+      "The initial entropy E(S) = 1 when p+ = 1/2 and p- = 1/2.",
+      "All attributes have information gain equal to 1.",
+      "Information Gain is always 0.307."
+    ],
+    "correct": "ab"
+  },
+  {
+    "question": "Which statement correctly describes torch.cuda.is_available()?",
+    "answers": [
+      "It computes the gradient of the loss function directly on the GPU.",
+      "It checks whether CUDA is available.",
+      "It automatically trains the neural network.",
+      "It deletes all CPU tensors."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "Which statements about the gradient step for linear regression are correct?",
+    "answers": [
+      "Computing the gradient on a single training example has cost O(m).",
+      "A full-batch gradient step involves a sum over all training examples.",
+      "It requires no access to training data.",
+      "It updates w using residuals such as y^(r) - (w^(k-1))^T x^(r)."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which recombination types are listed in the lecture?",
+    "answers": [
+      "Arithmetic crossover for real representation",
+      "Order crossover for permutation representation",
+      "Uniform crossover for binary or integer representation",
+      "N-cutting point crossover for binary or integer representation"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about binary cross-entropy are correct?",
+    "answers": [
+      "BCEWithLogitsLoss can be used when the model outputs logits.",
+      "nn.BCELoss() is used with sigmoid outputs in the example.",
+      "Binary cross-entropy is appropriate for binary classification labels.",
+      "Binary cross-entropy is used only for image resizing."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "For input 5x5, kernel 3x3, padding 0, which statements are correct?",
+    "answers": [
+      "The output size is 5x5 without padding.",
+      "The output size is 3x3.",
+      "H_out = floor((5 - 3 + 0)/1) + 1.",
+      "H_out = W_out = 3."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about unsupervised learning are correct?",
+    "answers": [
+      "The database is not labeled for learning.",
+      "It requires class labels for every training example.",
+      "It can model internal structure in data.",
+      "It can aim to detect clusters."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements about a PyTorch perceptron for binary classification are correct?",
+    "answers": [
+      "Binary cross-entropy can be used as the loss for binary labels.",
+      "The model cannot be trained because PyTorch modules do not support gradients.",
+      "SGD can be used as the optimizer.",
+      "The model applies a linear transformation followed by a sigmoid activation."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements about permutation representation are correct?",
+    "answers": [
+      "It allows repeated values freely without affecting validity.",
+      "It is suitable for ordering and routing problems.",
+      "The genotype is a permutation of n elements.",
+      "It can represent visiting order in TSP."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Consider a valid 2D cross-correlation operation. Which statements are mathematically correct regarding the output at Y_1,1 given standard filter flipping rules?",
+    "answers": [
+      "Y_1,3 = 0",
+      "The first row is [1, 1, 1].",
+      "Y_1,1 = -1",
+      "Y_1,2 = 3"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "Which NumPy functions can create arrays?",
+    "answers": [
+      "np.linspace()",
+      "np.destroy()",
+      "np.trios()",
+      "np.zeros()"
+    ],
+    "correct": "ad"
+  },
+  {
+    "question": "Which steps belong to the generic evolutionary algorithm loop?",
+    "answers": [
+      "Deselect parents",
+      "Evaluate fitness",
+      "Initialize population",
+      "Apply crossover, mutation, and survivor selection"
+    ],
+    "correct": "bd"
+  },
+  {
+    "question": "Which statements about multimodal optimization are correct?",
+    "answers": [
+      "The goal may be to identify several good optima.",
+      "Evolutionary populations are unsuitable because they cannot maintain subpopulations.",
+      "A multimodal problem has multiple local or global optima.",
+      "Alternative optima may represent useful design choices."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which typologies of fitness functions are mentioned?",
+    "answers": [
+      "Only differentiable and convex",
+      "One-objective and multi-objective",
+      "Maximization and minimization",
+      "Deterministic and heuristic"
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about weight notations like W_i^h = (w_{i,1}^h, w_{i,2}^h, ..., w_{i,H_{n-1}}^h) are correct in a deeper architecture?",
+    "answers": [
+      "The number of incoming weights depends on the previous layer width.",
+      "H_{n-1} denotes the number of neurons in the previous hidden layer.",
+      "W_i^h collects weights feeding a neuron in hidden layer h.",
+      "The notation implies that all layers must have the same number of neurons."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which loss functions are listed as common loss functions for ANNs?",
+    "answers": [
+      "Mean Squared Error Loss",
+      "Negative Log-Likelihood Loss",
+      "Cross-Entropy Loss",
+      "Mean Absolute Error Loss"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which sequence is consistent with a typical CNN image classification pipeline?",
+    "answers": [
+      "Conv -> ReLU -> Pooling",
+      "Input -> Conv -> ReLU",
+      "Softmax -> raw image input -> convolution",
+      "Flatten or Global Average Pooling -> Dense -> Softmax"
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which advantages of fuzzy systems are listed?",
+    "answers": [
+      "Rules can be evaluated in parallel.",
+      "Imprecise real-world concepts can be expressed through rules.",
+      "Fuzzy systems can be robust when rules or measurements are not perfectly precise.",
+      "Rules are usually easy to understand, test, and maintain."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "For the perceptron learning rule Δw_i = η * e^d * x_i^d, which statements are correct?",
+    "answers": [
+      "η is the learning rate.",
+      "The update is independent of the input data.",
+      "x_i^d is input attribute i for instance d.",
+      "e^d = t^d - o^d is the error for instance d."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements correctly distinguish certainty, probability, and fuzziness?",
+    "answers": [
+      "Certainty theory may treat 'Popescu is young' as true or false.",
+      "Fuzzy logic may state that Popescu belongs to young people with degree 0.8.",
+      "Fuzziness and probability always mean exactly the same thing.",
+      "Probability may express an 80% chance that Popescu is young."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "For the basic RNN equations h_t = ϕ(W_x x_t + W_h h_{t-1} + b_h) and y_t = W_y h_t + b_y, which statements are correct?",
+    "answers": [
+      "h_t depends on the current input x_t.",
+      "y_t is computed from h_t.",
+      "h_t is independent of all past information.",
+      "h_t depends on the previous hidden state h_{t-1}."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Consider a dataset that is difficult to separate by a straight line in Cartesian coordinates (x,y). After transforming each point to polar coordinates (r,θ), the classes become easier to separate. Which statements are consistent with this example?",
+    "answers": [
+      "Changing coordinates can reveal a simpler structure.",
+      "The chosen representation can change how separable a problem appears.",
+      "Representation matters for learning.",
+      "All representations are always equally useful."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which design choices for feedforward ANNs should be used?",
+    "answers": [
+      "Architecture",
+      "Output units",
+      "Loss function",
+      "Activation function"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which steps appear usually in a simple PyTorch training loop?",
+    "answers": [
+      "Call optimizer.zero_grad() before backpropagation.",
+      "Call optimizer.step() after loss.backward().",
+      "Compute outputs using the perceptron.",
+      "Compute a loss value."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about completeness of a fuzzy variable are correct?",
+    "answers": [
+      "Completeness can be written as: for all x in X, exists A such that mu_A(x) > 0.",
+      "Without completeness, some input values cannot be interpreted by the rule base.",
+      "Completeness means every membership value must be exactly 1.",
+      "A fuzzy variable is complete if every value belongs to at least one fuzzy set with positive degree."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "For a dataset D, which statements about ERM (Empirical Risk Minimization) are correct?",
+    "answers": [
+      "ERM can be written as argmin (average loss).",
+      "ERM requires knowing the true distribution p(x,y) exactly.",
+      "ERM is used because the expected risk is usually not directly computable.",
+      "ERM minimizes an average loss over the training dataset."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which fitness-function examples are correct?",
+    "answers": [
+      "TSP: minimize path cost.",
+      "Paying a sum with coins: minimize |sum to be paid - sum of selected coins|.",
+      "Function optimization: minimize or maximize the function value.",
+      "Knapsack: minimize |capacity - weight of selected objects| in the shown example."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which tasks are mentioned as common applications of ConvNets?",
+    "answers": [
+      "Optical character recognition",
+      "Image classification",
+      "Object detection and recognition in scenes",
+      "Image retrieval and similarity-based search"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Consider a 3x3 input matrix X and a 2x2 filter F in a valid cross-correlation operation. Which expressions are correct for the derivative of E with respect to F_1,1?",
+    "answers": [
+      "It depends on the upstream gradient dE/dO.",
+      "It equals the sum of the products of the upstream gradients and the corresponding input values.",
+      "It is always equal to zero.",
+      "It depends on the input values covered by F_1,1."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements about binary representation are correct?",
+    "answers": [
+      "It can represent selected objects in a knapsack problem.",
+      "A gene can take values 0 or 1.",
+      "The genotype can be a bit string.",
+      "It is mainly used for continuous unconstrained optimization only."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about feed-forward artificial neural networks are correct?",
+    "answers": [
+      "Information moves in one direction.",
+      "Information must move backward during prediction.",
+      "Information moves from input nodes through hidden nodes to output nodes.",
+      "A feed-forward network is the most simple type of ANN mentioned."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements about the Universal Approximation Theorem are consistent with the lecture?",
+    "answers": [
+      "The theorem means deep networks are never useful.",
+      "A shallow network may require exponentially more width.",
+      "One hidden layer is enough to approximate any function to arbitrary accuracy under suitable conditions.",
+      "A neural network can be viewed as function approximation."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which types of membership functions can be used in a rule-based system under uncertainty?",
+    "answers": [
+      "Trapezoidal membership functions",
+      "Triangular membership functions",
+      "Functions mapping crisp values to membership degrees in the interval [0, 1].",
+      "A function that returns only negative values"
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about the filters shown in the lecture are correct?",
+    "answers": [
+      "Combining multiple feature maps can detect richer image structure.",
+      "A Sobel-like filter can detect vertical edges.",
+      "A horizontal line detector responds to horizontal patterns.",
+      "Different filters respond to different visual patterns."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which disadvantages of proportional selection are mentioned?",
+    "answers": [
+      "It never uses the entire population",
+      "Premature convergence",
+      "Best chromosomes may dominate the population early",
+      "Low selection pressure when fitness values are similar"
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about backpropagation are correct?",
+    "answers": [
+      "It requires activation-function derivatives to be known at network design time.",
+      "It is used for fine-tuning ANN weights.",
+      "It is not guaranteed to find the global minimum of the error function.",
+      "It computes gradients that can be used by gradient descent-based optimizers."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about transforming real values from binary representation are correct?",
+    "answers": [
+      "Longer chromosomes may slow evolution.",
+      "Longer chromosomes can give better precision.",
+      "Binary length L has no effect on precision.",
+      "A chromosome of length L can represent 2^L values."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements about padding are correct?",
+    "answers": [
+      "Same padding can preserve spatial size for stride 1.",
+      "With valid padding, the convolution is applied only where the kernel fully overlaps the input.",
+      "Padding can help border pixels influence the output more fairly.",
+      "Padding means adding extra values around the input border."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "For the update rule θ^(t+1) = θ^(t) - η * ∇f(θ^(t)), which statements are correct?",
+    "answers": [
+      "∇f(θ^(t)) is the gradient at the previous iteration.",
+      "η > 0 is the step size or learning rate.",
+      "The update is a gradient-based optimization step.",
+      "The formula does not involve model parameters."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which are main characteristics of evolutionary algorithms mentioned in the lecture?",
+    "answers": [
+      "Exact symbolic proof of optimality at every generation",
+      "Parallel population-based search",
+      "Iterative processes",
+      "Random search components"
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about the most common train-test split are correct?",
+    "answers": [
+      "train_test_split is used.",
+      "test_size = 0.2 means 20% test data.",
+      "random_state = 42 makes the split reproducible.",
+      "The test data are used to update model weights during training."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about ridge regression are correct?",
+    "answers": [
+      "It keeps the linear model form h(x) = w^T x.",
+      "It is unrelated to regularization.",
+      "It uses the regularizer R(h) = ||w||_2^2.",
+      "It adds an L2 penalty to the squared loss objective."
+    ],
+    "correct": "acd"
+  },
 ];
 
 // Total questions for reference
