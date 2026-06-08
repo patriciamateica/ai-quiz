@@ -1863,6 +1863,436 @@ const questions = [
     ],
     "correct": "acd"
   },
+  {
+    "question": "For Sugeno inference with firing strengths α_i and crisp consequents z_i = f_i(x,y), which statements are correct?",
+    "answers": [
+      "The denominator is always ignored.",
+      "The computation is a weighted average.",
+      "Rules with higher firing strength influence the final output more.",
+      "The output can be computed as z* = (∑ α_i z_i) / (∑ α_i)."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements correctly describe the real goal of a Machine Learning model?",
+    "answers": [
+      "The goal can be expressed as minimizing an expected loss.",
+      "Low training loss always guarantees low test loss.",
+      "The distribution p(x,y) is typically unknown.",
+      "The goal is to perform well on unseen future data."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which formulas are correct for Softplus and Swish as presented in the lecture?",
+    "answers": [
+      "Swish is defined as y = max(0, x).",
+      "Softplus always outputs values in (0, +∞).",
+      "Softplus: y = log(1 + e^x).",
+      "Swish: y = x * sigmoid(x)."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements correctly compare clipped and scaled Mamdani consequents?",
+    "answers": [
+      "Clipping is easy to compute but may lose shape information.",
+      "Scaling preserves more shape information but is more computationally demanding.",
+      "Clipping cuts the output membership function at the firing-strength level.",
+      "Scaling multiplies the output membership function by the firing strength."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which niching methods are mentioned?",
+    "answers": [
+      "Fitness sharing",
+      "Crowding",
+      "Speciation",
+      "Clearing and island models"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements correctly compare Mamdani, Sugeno, and Tsukamoto models?",
+    "answers": [
+      "Sugeno produces crisp rule outputs.",
+      "Mamdani produces fuzzy output regions.",
+      "Tsukamoto uses monotone consequent fuzzy sets and produces crisp values per rule.",
+      "All three models use exactly the same consequent representation."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which data subsets are explicitly included in the training database discussion?",
+    "answers": [
+      "Training data",
+      "Test data",
+      "Only unlabeled pictures with no task",
+      "A possible 80% training and 20% testing split"
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which of the following functions can be used as activation functions?",
+    "answers": [
+      "Gaussian function",
+      "Constant function",
+      "Sigmoid function",
+      "Step function"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "For max pooling over an N x N region, which statement about backpropagation is correct?",
+    "answers": [
+      "The maximum position from the forward pass matters.",
+      "The gradient is equally distributed to all inputs regardless of their values.",
+      "The gradient is passed only to the input element that achieved the maximum value in the forward pass.",
+      "Max pooling has no effect on gradient flow."
+    ],
+    "correct": "ac"
+  },
+  {
+    "question": "Which distances or similarity measures are mentioned for unsupervised learning?",
+    "answers": [
+      "Manhattan distance",
+      "Cosine similarity",
+      "Euclidean distance",
+      "Levenshtein distance"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements correctly describe learning-algorithm evaluation?",
+    "answers": [
+      "Evaluation should ignore accuracy, training time, and testing time.",
+      "Experimental evaluation may compare methods on different data.",
+      "Theoretical evaluation may analyze computational complexity.",
+      "Cross-validation can be used in experimental evaluation."
+    ],
+    "correct": "cd"
+  },
+  {
+    "question": "Which statements about ResNet bottleneck blocks are correct?",
+    "answers": [
+      "The middle layer processes features.",
+      "A bottleneck block uses 1x1, 3x3, and 1x1 convolutions.",
+      "The first layer reduces channels.",
+      "The last layer restores dimension."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements correctly describe a model in Machine Learning?",
+    "answers": [
+      "A model maps features to predictions.",
+      "A model is exactly the same thing as the training dataset.",
+      "A model is the object used to make predictions after training.",
+      "A model is usually a parameterized function."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which are problem-side components of an optimization model?",
+    "answers": [
+      "Objective functions",
+      "Decision variables",
+      "Constraints and feasible region",
+      "Mutation probability only"
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "For a network that adds two bits, which input-output pairs are correct if the output is encoded as a decimal sum?",
+    "answers": [
+      "(1, 1) -> 2",
+      "(0, 1) -> 1",
+      "(0, 0) -> 0",
+      "(1, 0) -> 1"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which node types are included in the decision-tree definition from the lecture?",
+    "answers": [
+      "Gradient nodes",
+      "Decision nodes",
+      "Hazard nodes",
+      "Result nodes"
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements about neuron processing are correct?",
+    "answers": [
+      "The neuron computes a weighted sum net = ∑ w_i x_i.",
+      "The activation function processes the net input.",
+      "Weights are irrelevant to neuron computation.",
+      "The output can be written as o = f(net)."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements correctly explain why AI systems should not be treated as 'thinking' systems?",
+    "answers": [
+      "If a system produces language, it necessarily understands meaning like a human.",
+      "Probabilistic outputs are not equivalent to genuine understanding.",
+      "Their behavior is produced by formal models and computation.",
+      "Optimization and parameter updates do not imply consciousness."
+    ],
+    "correct": "bcd"
+  },
+  {
+    "question": "Which statements correctly compare the perceptron algorithm with the gradient descent algorithm?",
+    "answers": [
+      "Perceptron convergence is finite only under perfect separation conditions.",
+      "The perceptron output is discrete and threshold-based.",
+      "Gradient descent may use continuous outputs such as o^d = w^T x^d or o^d = sig(w^T x^d).",
+      "Gradient descent is never asymptotic."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which tasks are examples of sequence problems mentioned in the lecture?",
+    "answers": [
+      "DNA sequences",
+      "Sensor streams",
+      "Text",
+      "Speech"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Why do LSTMs learn long-term dependencies better than plain RNNs?",
+    "answers": [
+      "Important signals can persist across many time steps.",
+      "Cell-state updates are partly additive rather than fully multiplicative.",
+      "Gates provide data-dependent control over memory retention.",
+      "They remove the need for any optimization."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "For MinMaxScaler with feature range (min, max), which formulas or statements are correct?",
+    "answers": [
+      "X_std = (X - X_min) / (X_max - X_min).",
+      "X_scaled = X_std * (max - min) + min.",
+      "The scaler should be fitted separately on each test sample.",
+      "The transformation should be fitted on the test data."
+    ],
+    "correct": "ab"
+  },
+  {
+    "question": "Why were LSTMs introduced?",
+    "answers": [
+      "To preserve information for longer periods.",
+      "To remove sequence modeling entirely.",
+      "To use gates that control memory.",
+      "To introduce a dedicated cell state."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements about traditional ANNs and generic transforms are correct?",
+    "answers": [
+      "Generic transforms may map data to a higher-dimensional space.",
+      "Manual engineering can require domain-specific human effort.",
+      "Generic transforms always guarantee perfect generalization.",
+      "RBF kernels are mentioned as an example of kernel methods."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Given x = (1, 2)^T, W = [[2, 1], [0, 1]], and b = (1, -1)^T, which statements are correct for y = Wx + b?",
+    "answers": [
+      "The dot product <x, y> is 7.",
+      "The Euclidean norm of x is 5.",
+      "y = (5, 1)^T.",
+      "Wx = (4, 2)^T."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which equations correctly describe perceptron-based separation in the lecture?",
+    "answers": [
+      "For m > 3, a hyperplane can be written using a weighted sum of features.",
+      "For m = 2, a line can be written as w_1 x_1 + w_2 x_2 + θ = 0.",
+      "A perceptron always separates data using a circle.",
+      "For m = 3, a plane can be written as w_1 x_1 + w_2 x_2 + w_3 x_3 + θ = 0."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements about batching sequence data in PyTorch are correct?",
+    "answers": [
+      "With batch_first = True, the batch dimension comes first.",
+      "Batching allows several sequences to be processed in parallel.",
+      "Batching requires every model to ignore sequence length.",
+      "Batches can improve computational efficiency during training."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements correctly distinguish minimizing average loss from Empirical Risk Minimization?",
+    "answers": [
+      "Minimizing average loss emphasizes an optimization viewpoint on a fixed dataset.",
+      "They are always completely different numerical problems.",
+      "ERM emphasizes a statistical learning viewpoint under an i.i.d. assumption.",
+      "They often lead to the same formula."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements about training are correct?",
+    "answers": [
+      "Training raises both computational and statistical questions.",
+      "Training can be formulated as solving an ERM problem.",
+      "Training is the same thing as validation.",
+      "Training aims to obtain a learned hypothesis h_hat."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which aspects should be compared when evaluating two models trained on the same dataset?",
+    "answers": [
+      "How accurate they are",
+      "Their ability to compile the modeled data.",
+      "Their learned weights for the best model",
+      "How fast they train to reach accuracy"
+    ],
+    "correct": "ad"
+  },
+  {
+    "question": "Which statements about linearity and non-linearity are correct?",
+    "answers": [
+      "A nonlinear transform φ(x) can be used in f(x) = W^T φ(x).",
+      "Nonlinear transformations are never used in neural networks.",
+      "Linear models can be fit efficiently via convex optimization.",
+      "Linear models have limited model capacity."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which representations of uncertainty can be used?",
+    "answers": [
+      "Probabilities",
+      "Fuzzy logic",
+      "Dempster-Shafer theory",
+      "Certainty factors and confidence values"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "For the network with two inputs and two hidden units, which hidden-layer expressions are correct?",
+    "answers": [
+      "o_1^H = f(net_1^H).",
+      "net_1^H = (W_1^H)^T X = w_11^H x_1 + w_12^H x_2.",
+      "net_2^H = (W_2^H)^T X = w_21^H x_1 + w_22^H x_2.",
+      "o_1^H is computed without any activation function."
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "Which statements about SPEA2 are correct?",
+    "answers": [
+      "It uses an external archive.",
+      "Raw fitness R(i) sums strengths of solutions that dominate i.",
+      "Final fitness includes a density estimate D(i).",
+      "Strength S(i) counts how many solutions i dominates."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about the F1 Score are correct?",
+    "answers": [
+      "It is the harmonic mean between precision and recall.",
+      "It ignores both precision and recall.",
+      "Its range is [0, 1] according to the lecture.",
+      "It can be written as F1 = 2 * (1 / (1/Prec + 1/Recall))."
+    ],
+    "correct": "acd"
+  },
+  {
+    "question": "Which statements correctly distinguish Strong AI from Weak AI?",
+    "answers": [
+      "Weak AI necessarily implies that the system uses symbolic reasoning only.",
+      "Strong AI refers to hypothetical systems with general intelligence comparable to human intelligence.",
+      "Strong AI is already achieved by current machine learning systems.",
+      "Weak AI refers to systems designed for specific tasks or narrow problems."
+    ],
+    "correct": "bd"
+  },
+  {
+    "question": "Which design decisions must be made for a feedforward network?",
+    "answers": [
+      "Loss function",
+      "Number of neurons in each layer",
+      "Number of layers",
+      "Activation function"
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which concepts are associated with classical AI?",
+    "answers": [
+      "Logic",
+      "Symbols",
+      "Gradient descent as the only reasoning mechanism",
+      "Rules"
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which statements correctly describe modern data-driven AI?",
+    "answers": [
+      "Its performance may depend on data availability and model capacity.",
+      "Optimization is central to model training.",
+      "It is always deterministic and independent of data.",
+      "Knowledge is often represented implicitly through parameters."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which are common modelling errors listed in the lecture?",
+    "answers": [
+      "Optimizing the wrong objective.",
+      "Ignoring scale differences between objectives or constraints.",
+      "Using an encoding that generates mostly infeasible candidates.",
+      "Reporting one run without measuring stochastic variability."
+    ],
+    "correct": "abcd"
+  },
+  {
+    "question": "Which statements about the ReLU activation and its gradient are correct?",
+    "answers": [
+      "Its gradient is 0 for negative inputs.",
+      "ReLU can be written as f(x) = max(0, x).",
+      "It is smooth and differentiable at x = 0 in the classical sense.",
+      "Its gradient is 1 for positive inputs."
+    ],
+    "correct": "abd"
+  },
+  {
+    "question": "Which fuzzy-logic operations are given in the lecture?",
+    "answers": [
+      "a ∧ b = min(a, b)",
+      "~a = 1 - a",
+      "a ∨ b = max(a, b)",
+      "a ∧ b = a + b always"
+    ],
+    "correct": "abc"
+  },
+  {
+    "question": "For training a fully connected network in PyTorch, which components are generally needed?",
+    "answers": [
+      "A loss criterion comparing predictions with targets.",
+      "A database D = {(x_i, y_i) | i ∈ {1,...,n}}.",
+      "An optimizer that updates parameters.",
+      "A training loop that repeatedly performs forward and update steps."
+    ],
+    "correct": "abcd"
+  },
 ];
 
 // Total questions for reference
